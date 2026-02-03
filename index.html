@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Brito | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #3b82f6, #60a5fa);
+      background-size: 400% 400%;
+      animation: gradient 20s ease infinite;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    a { text-decoration: none; color: #38bdf8; }
+
+    header {
+      padding: 80px 20px 60px 20px;
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      border-radius: 0 0 30px 30px;
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #cbd5e1;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: 1px solid #38bdf8;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      border-left: 5px solid #38bdf8;
+      padding-left: 12px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    /* Carrossel */
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-card {
+      min-width: 300px;
+      margin-right: 20px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+  .carousel-card img {
+  width: 100%;        /* sempre ocupa toda a largura do card */
+  max-height: 200px;  /* limite de altura */
+  object-fit: cover;  /* mantém proporção e corta excesso */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+    .carousel-controls {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .carousel-controls button {
+      padding: 10px 15px;
+      margin: 0 5px;
+      border: none;
+      border-radius: 6px;
+      background: #38bdf8;
+      color: #0f172a;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .carousel-controls button:hover {
+      background: #0ea5e9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #cbd5e1;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width: 700px){
+      header h1 { font-size: 2rem; }
+      .carousel-card { min-width: 250px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Pedro Brito</h1>
+    <p>Estudante de TI | Desenvolvedor & Designer | Jovem Aprendiz / Estágio</p>
+    <a href="https://github.com/PedroBrito0519" class="btn" target="_blank">Ver GitHub</a>
+  </header>
+
+  <!-- SOBRE MIM -->
+  <section>
+    <h2>Sobre Mim</h2>
+    <p>Sou estudante do Ensino Médio Técnico em Informática na FIAP School, com experiência prática em desenvolvimento web, criação de jogos em JavaScript e design gráfico. Tenho vivência em projetos acadêmicos e pessoais, como sites e jogos interativos, e também atuo em design de conteúdo digital (imagens, vídeos e materiais gráficos).</p>
+    <p>Meu objetivo é ingressar em estágio ou Jovem Aprendiz na área de Tecnologia da Informação, aplicando meus conhecimentos em programação, web, banco de dados e design, ao mesmo tempo que desenvolvo minhas habilidades profissionais.</p>
+    <p>Sou proativo, organizado e comprometido com resultados, buscando sempre aprender e evoluir em ambientes desafiadores.</p>
+  </section>
+
+  <!-- PORTFÓLIO SOFTWARE -->
+  <section>
+    <h2>Projetos de Software / Web</h2>
+    <div class="carousel">
+      <div class="carousel-track" id="track-software">
+        <div class="carousel-card">
+          <h3>Projeto Educação Financeira</h3>
+          <p>Projeto academico focado em desenvolver com HTML, CSS e JavaScript, em equipe, focado em educação financeira.</p>
+          <a href="https://pedrobrito0519.github.io/PORCOINS---Sempre-educando-seu-bolso/" target="_blank">Ver Projeto →</a>
+        </div>
+        <div class="carousel-card">
+          <h3>Jogo Interativo</h3>
+          <p>Jogo baseado em escolhas, desenvolvido com JavaScript, aplicando lógica condicional.</p>
+          <a href="https://pedrobrito0519.github.io/Batalha-de-Azincourt/" target="_blank">Ver Projeto →</a>
+        </div>
+        <div class="carousel-card">
+          <h3>Nuvio - produtividade e segurança</h3>
+          <p>Projeto academico focado em desenvolver uma plataforma de armazenamento de dados e informações digitais</p>
+          <a href="https://pedrobrito0519.github.io/FUTURE-FEST---NUVIO/" target="_blank">Ver Projeto →</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button onclick="moveCarousel('track-software', -1)">←</button>
+      <button onclick="moveCarousel('track-software', 1)">→</button>
+    </div>
+  </section>
+<!-- PORTFÓLIO DESIGN -->
+<section>
+  <h2>Projetos de Design / Arte Digital</h2>
+  <div class="carousel">
+    <div class="carousel-track" id="track-design">
+      
+      <div class="carousel-card">
+        <img src="imagens/RL SP - VIGILIA FRASE 1.png" alt="Design 1">
+        <h3>Arte 1</h3>
+        <p>Post publicado no Instagram / Projeto de divulgação de evento.</p>
+        <a href="https://www.instagram.com/p/DN88IBrkaS3/" target="_blank">Ver Post →</a>
+      </div>
+
+      <div class="carousel-card">
+        <img src="imagens/carrossel.png" alt="Design 2">
+        <h3>Arte 2</h3>
+        <p>Carrossel de divulgação do acontecimento do evento</p>
+        <a href="https://www.instagram.com/p/DQC7CIQEuXg/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank">Ver Post →</a>
+      </div>
+
+      <div class="carousel-card">
+        <img src="imagens/storiesculto.png" alt="Design 3">
+        <h3>Arte 3</h3>
+        <p>Stories divulgação de evento</p>
+      
+      </div>
+  <div class="carousel-card">
+        <img src="imagens/driver pro.jpeg" alt="Design 2">
+        <h3>Arte 4</h3>
+        <p>Banner divulgação</p>
+      
+      </div>
+  <div class="carousel-card">
+        <img src="imagens/vital pet.jpg" alt="Design 2">
+        <h3>Arte 5</h3>
+        <p>Carrossel de informações</p>
+        <a href="https://www.instagram.com/p/DO6FMnPjV1G/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank">Ver Post →</a>
+      </div>
+ <div class="carousel-card">
+        <img src="imagens/oab.jpg" alt="Design 2">
+        <h3>Arte 6</h3>
+        <p>Convite de evento</p>
+        <a href="https://www.instagram.com/p/C-S94fMP2RI/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Ver Post →</a>
+      </div>
+    </div>
+    
+  </div>
+  <div class="carousel-controls">
+    <button onclick="moveCarousel('track-design', -1)">←</button>
+    <button onclick="moveCarousel('track-design', 1)">→</button>
+  </div>
+</section>
+
+
+  <!-- CONTATO -->
+  <section>
+    <h2>Contato</h2>
+    <p>Email: pedrobrito.hc@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/pedro-brito-252a70356</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Pedro Brito. Todos os direitos reservados.
+  </footer>
+
+  <!-- CARROSSEL JS -->
+  <script>
+    function moveCarousel(trackId, direction){
+      const track = document.getElementById(trackId);
+      const cardWidth = track.querySelector('.carousel-card').offsetWidth + 20;
+      const currentTransform = track.style.transform.replace(/[^-?\d.]/g,'') || 0;
+      let newTransform = parseFloat(currentTransform) - direction * cardWidth;
+
+      const maxTransform = 0;
+      const minTransform = -((track.children.length - Math.floor(track.parentElement.offsetWidth / cardWidth)) * cardWidth);
+
+      if(newTransform > maxTransform) newTransform = maxTransform;
+      if(newTransform < minTransform) newTransform = minTransform;
+
+      track.style.transform = `translateX(${newTransform}px)`;
+    }
+  </script>
+
+</body>
+</html>
